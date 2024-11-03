@@ -137,22 +137,6 @@
         function setVolume(value) {
             audio.volume = value; // Ajuste le volume de l'audio
         }
-
-        // Fonction pour entrer en plein écran dès que la page est chargée
-        function enterFullscreen() {
-            if (document.documentElement.requestFullscreen) {
-                document.documentElement.requestFullscreen();
-            } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-                document.documentElement.mozRequestFullScreen();
-            } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-                document.documentElement.webkitRequestFullscreen();
-            } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-                document.documentElement.msRequestFullscreen();
-            }
-        }
-
-        // Appeler la fonction pour entrer en plein écran lorsque la page est complètement chargée
-        window.onload = enterFullscreen;
     </script>
 </body>
 </html>
